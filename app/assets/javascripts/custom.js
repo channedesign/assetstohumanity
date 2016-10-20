@@ -33,4 +33,6 @@ $(document).ready(function() {
     $(".uil-spin-css").hide();
     $(".angle-right-submit").show();
   });
+
+
 });
