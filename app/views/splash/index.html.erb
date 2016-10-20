@@ -1,0 +1,74 @@
+<div id='splash'>
+	<div class="video_background">
+    <video preload="auto" autoplay loop>
+      <source src="/videos/background-video.mp4" type="video/mp4" />
+    </video>
+  </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3 col-xs-12 text-center">
+				<%= link_to(image_tag('logo.png', class: "logo"), root_path) %>
+			</div>
+			<div class="col-md-12">
+				<div class="col-sm-10 col-sm-offset-1">
+					<p>Assets To Humanity is a social enterprise grant maker and we believe the purpose of philanthropy is to empower. Our grants are targeted to empower American children by providing high quality nutrition, education and valuable life lessons. The program provides grants to specialized and fully vetted regional non-profits as to directly measure the impact of children's lives changed from this initiative.</p>
+				</div>
+			</div>
+			<div id="subscribe" class="col-xs-12 text-center">
+				<p class="show-on-submit success">You Have successfully subscribed to your newsletter!</p>
+				<p class="show-on-submit error">Oops! Please verify your email or try again later.</p>
+				<div class="borderTopBottom subscribe-div">
+					<span class="enter-email">ENTER YOUR EMAIL</span><span class="angle-right">&gt;</span>
+					<%= form_tag('/splash/subscribe', method: 'post', id: 'subscribing', remote: true) do %>
+						<input type='email' name="email" class="show-on-click-subscribe" id="subscribe-email" placeholder="YOUR EMAIL HERE" autofocus><span class="angle-right-submit show-on-click-subscribe hide-on-ajax">&gt;</span><div class='uil-spin-css' style='-webkit-transform:scale(0.1)'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
+					<% end %>
+				</div>
+				<br><br>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

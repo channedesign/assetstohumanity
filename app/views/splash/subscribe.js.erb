@@ -1,0 +1,15 @@
+<% if @js_email_error %>
+	$(".show-on-submit.error").show();
+	$(".show-on-submit.success").hide();
+	TweenMax.to($(".borderTopBottom"), 0.2, { left: -10, repeat: 1, yoyo: true, ease: Back.easeInOut.config(10) });
+<% else %>
+	$(".show-on-submit.success").show();
+	$(".show-on-submit.error").hide();
+	$(".show-on-click-subscribe").val("");
+	var subscribedAnimation = new TimelineMax()
+								.to($(".show-on-submit.success"), 1, { display: 'none', delay: 1 })
+                .to($(".borderTopBottom"), 0.5, { height: 0, padding: 0 })
+                .to($(".show-on-click-subscribe"), 0.1, { display: "none" }, "-=0.5")
+                .to($(".borderTopBottom"), 0.5, { height: 45, padding: 10 })
+                .to($(".enter-email, .angle-right"), 0.5, { opacity: 1, display: 'inline-block' });
+<% end %>
