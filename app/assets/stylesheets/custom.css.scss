@@ -2,7 +2,14 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
+/*blue: #42C2EF;*/
+
 /*--------------------  General/Helpers --------------------*/
+
+html, body {
+  position: relative;
+  overflow-x: hidden;
+}
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -28,6 +35,28 @@ body {
 	color: #B24544;
 }
 
+.show-on-click, .show-on-click-contact {
+  opacity: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #42C2EF;
+  cursor: pointer;
+}
+
+.blue {
+  color: #42C2EF;
+}
+
 /*--------------------  Preload  --------------------*/
 
 .preloader{
@@ -39,6 +68,56 @@ body {
   background: #000;
   z-index: 99999;
 }
+
+/*--------------------  Navigation  --------------------*/
+
+nav {
+  position: relative;
+  z-index: 9999;
+  img {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 60px;
+  }
+  img:hover {
+    cursor: pointer;
+  }
+  ul {
+    position: absolute;
+    top: 40px;
+    right: -300px;
+    opacity: 0;
+    li {
+      font-size: 1.3em;
+      font-weight: 300;
+      float: left;
+      letter-spacing: 3px;
+    }
+  }
+  @media (max-width: 450px) {
+   ul {
+      li {
+        font-size: 1.5em;
+      }
+    }
+  }
+  @media (max-width: 375px) {
+   ul {
+      li {
+        font-size: 1.2em;
+      }
+    }
+  }
+  @media (max-width: 350px) {
+   ul {
+      li {
+        font-size: 1em;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
 	
 /*--------------------  Main --------------------*/
 
@@ -48,14 +127,24 @@ body {
 		width: 70%;
 	}
 	.col-sm-12 {
+    position: relative;
 		margin-top: 70px;
 		background-color: rgba(0, 0, 0, 0.6);
 		padding: 50px;
 		p {
-			text-align: justify;
 			line-height: 40px;
 			font-size: 1.6em;
 		}
+    .show-on-click-contact {
+      position: absolute;
+      text-align: center;
+      top: 20%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin: auto;
+    }
 	}
 	#subscribe {
 		position: relative;

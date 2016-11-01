@@ -1,3 +1,13 @@
+<nav class="hide-in-xs-mobile">
+	<div class="nav-buttons">
+		<%= image_tag 'nav-button.png', class: "hide-on-click" %>
+		<%= image_tag 'nav-button-angle.png', class: "show-on-click" %>
+	</div>
+	<ul class="slide-on-click">
+		<li><a class="info-button">INFO</a> |</li>
+		<li>&nbsp;<a class="contact-button">CONTACT</a></li>
+	</ul>
+</nav>
 <div id='splash'>
 	<div class="video_background">
     <video preload="auto" autoplay loop>
@@ -10,8 +20,13 @@
 				<%= link_to(image_tag('logo.png', class: "logo"), root_path) %>
 			</div>
 			<div class="col-sm-12 col-xs-12">
-				<div class="col-sm-10 col-sm-offset-1">
-					<p>Assets To Humanity is a social enterprise grant maker and we believe the purpose of philanthropy is to empower. Our grants are targeted to empower American children by providing high quality nutrition, education and valuable life lessons. The program provides grants to specialized and fully vetted regional non-profits as to directly measure the impact of children's lives changed from this initiative.</p>
+				<div class="col-sm-10 col-sm-offset-1 show-on-click-info">
+					<p class=" text-justify">Assets To Humanity is a social enterprise grant maker and we believe the purpose of philanthropy is to empower. Our grants are targeted to empower American children by providing high quality nutrition, education and valuable life lessons. The program provides grants to specialized and fully vetted regional non-profits as to directly measure the impact of children's lives changed from this initiative.</p>
+				</div>
+				<div class="col-sm-10 col-sm-offset-1 show-on-click-contact">
+					<p><a href="tel:+18885442037">(888) 544-2037</a></p>
+					<p><a href="mailto:invest@rastegarequitypartners.com">INVEST@RASTEGAREQUITYPARTNERS.COM</a></p>
+					<p><a href="https://www.google.com/maps/place/Frost+Bank+Tower+Executive+Health+Club/@30.266236,-97.7430339,17.96z/data=!4m5!3m4!1s0x8644b5084844b25b:0xdeb1e3452a410e5c!8m2!3d30.2663912!4d-97.742125" target="_blank">FROST TOWER, 401 CONGRESS AVE, 33RD FLOOR, AUSTIN, TX, 787011</a></p>
 				</div>
 			</div>
 			<div id="subscribe" class="col-xs-12 text-center">
